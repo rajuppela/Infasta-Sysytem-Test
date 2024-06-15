@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petsfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <span class="logo">
+            <img src="./logo.jpg" alt="Petsfolio">
+        </span>
+        <div class="options" id="menuOptions">
+            <a class="login" href=""><span><img src="./login.jpg" alt="Login" class="icons"> Login</span></a>
+            <a class="download" href=""><span><img src="./download.jpg" alt="download" class="icons"> Download App</span></a>
+            <a class="cart" href=""><span><img src="./cart.jpg" alt="cart" class="icons"> Cart</span></a>
+            <a class="support" href=""><span><img src="./support.jpg" alt="support" class="icons"> Support
+                <select></select></span></a>
+        </div>
+        <div class="menu" onclick="ClickHandler()"><img src="./icons8-hamburger-menu-25.png" alt="menu" class="icons menuButton"></div>
+    </div>
+    <div class="navbar">
+        <a href="">Home</a>
+        <a href="">Pet Services<select></select></a>
+        <a href="">Pet Insurance</a>
+        <a href="">Vet Services<select></select></a>
+        <a href="">Shop</a>
+        <a href="">Academy</a>
+        <a href="">Become a Pet Master</a>
+    </div>
+    <div class="banner">
+        <img src="./banner.jpg" alt="banner">
+        <span>
+            <h1 class="rum-raisin-regular">Abode of the shortest breed of cattle</h1>
+            <p>Lorem ipsum dolor sit amet consectetur. Iaculis mattis hac vitae</p>
+            <button class="explore"><a href="">Explore More</a></button>
+        </span>
+    </div>
+    <div class="content">
+        <div class="images">
+            <img src="./Rectangle 4.jpg" alt="pic4" class="pic4">
+            <img src="./Rectangle 5.jpg" alt="pic5" class="pic5">
+        </div>
+        <div class="matter">
+            <h1 class="rum-raisin-regular">Why we need a Cow at Home</h1>
+            <p>If you think deeply about why you should reduce the height
+                of cows to raise them at home or in an apartment, there is
+                a very big scientific reason also.</p>
+            <p>According to ancient tradition, many diseases can be cured in the surroundings,
+                 where this cow lives and the smell of its body also cures many diseases and 
+                 the energy waves coming from the brain of the cow make the human brain powerful
+                  and the surroundings become very peaceful and energetic.</p>
+            <img src="./image 5.jpg" alt="img" class="image5">
+        </div>
+    </div>
+</body>
+<script>
+   
+    function ClickHandler() {
+        var options = document.getElementsByClassName("options");
+        var menuBtn = document.getElementsByClassName("menu");
+        options[0].setAttribute("style","display:flex","flex-direction:column")
+       menuBtn[0].addEventListener("click",()=>{
+        options[0].setAttribute("style","display:none")
+        window.location.assign("./index.html")
+       })
+    }
+    </script>
+</html>
